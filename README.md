@@ -17,6 +17,7 @@ Don't reinvent the wheel (바퀴를 다시 발명하지 마라).
 
 ### Feature List
 - [ ] 댓글 기능 추가
+- [ ] 방문자수 보여주기
 - [ ] 포스트에 썸네일 사진 추가
 - [ ] 포스트에 Subtitle 추가 (현재는 본문 내용 자른 것)
 
