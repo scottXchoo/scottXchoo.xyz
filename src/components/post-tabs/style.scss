@@ -15,23 +15,24 @@
     height: 40px;
     width: 100%;
     max-width: $content-max-width + 40px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 
     .mui-tabs {
       .MuiTab-root {
         height: 40px;
         min-height: auto;
         min-width: auto;
-        padding: 10px 12px;
+        padding: 8px 10px;
         font-family: $font-family;
         color: var(--tab-text-color);
         font-weight: 500;
-        font-size: 17px;
+        font-size: 14px;
         transition: all 200ms ease;
+        margin: 0px 2px;
 
         :hover {
           color: var(--tab-hover-text-color);
-          transition: all 200ms ease;
+          transition: all 100ms ease;
         }
       }
 
@@ -57,6 +58,4 @@
       }
     }
   }
-
-
 }
