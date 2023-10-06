@@ -29,9 +29,10 @@ const Layout = ({ children }) => {
       <main className="page-content">{children}</main>
       <PageFooter
         author={author.name || `Author`}
-        githubUrl={author.social?.github || `https://www.github.com`}
+        githubUrl={author.social?.github || `https://www.github.com/scottXchoo`}
       />
-      <ThemeSwitch />
+      {/* 지운 이유 : 다크모드가 최고! */}
+      {/* <ThemeSwitch /> */}
     </div>
   );
 };

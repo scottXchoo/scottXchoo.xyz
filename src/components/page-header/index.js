@@ -34,14 +34,15 @@ function PageHeader({ siteTitle }) {
             </div>
             <div className="trailing-section">
               <Link className="link" to="/about">
-                about
+                ABOUT
               </Link>
               <Link className="link" to="/posts">
-                posts
+                POST
               </Link>
-              <PostSearch
+              {/* 지운 이유 : 서치 기능이 잘 안 됨... */}
+              {/* <PostSearch
                 posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}
-              />
+              /> */}
             </div>
           </div>
         </header>
