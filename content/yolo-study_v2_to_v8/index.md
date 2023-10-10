@@ -7,7 +7,7 @@ tags: Deep_Learning YOLO
 categories: ML/DL
 ---
 
-YOLO v1부터 v8까지 버전별 아키텍처 및 특징에 대해 정리해보고자 합니다.
+YOLO v1부터 v8까지 버전별 아키텍처 및 특징에 대해 정리해보고자 합니다.@
 
 ## YOLO 버전별 출시 시점
 
@@ -20,11 +20,11 @@ YOLO v1부터 v8까지 버전별 아키텍처 및 특징에 대해 정리해보�
 - YOLO v6 : 2022년 9월 발표. 여러 방법을 이용하여 알고리즘의 효율을 높이고, 특히 시스템에 탑재하기 위한 Quantization과 distillation 방식도 일부 도입하여 성능 향상
 - YOLO v8 : 2023년 1월 발표. YOLO 모델을 위한 완전히 새로운 레포지토리를 출시하여 인스턴스 세분화 및 이미지 분류 모델을 train하기 위한 통합 프레임워크로 구축
 
-
 ## YOLO v1
+
 ### First YOLO
+
 - S x S 크기의 Grid Cell로 Input Image 분리
 - Cell마다 B개의 bounding boxes, confidence score, class probabilites 예측
-- Final Output : S x S (B * 5 + C)
-[ S : Num of Cell, B : Num of Bounding boxes, C : Num of Classes ]
-
+- Final Output : S x S (B \* 5 + C)
+  [ S : Num of Cell, B : Num of Bounding boxes, C : Num of Classes ]
