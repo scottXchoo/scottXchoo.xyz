@@ -7,6 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import AndroidIcon from '@mui/icons-material/Android';
 import AppleIcon from '@mui/icons-material/Apple';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LanguageIcon from '@mui/icons-material/Language';
 
 import './style.scss';
 
@@ -17,7 +18,7 @@ function IconButtonBar({ links = {} }) {
       case 'post':
         return <DescriptionIcon {...props} />;
       case 'demo':
-        return <PlayIcon {...props} />;
+        return <LanguageIcon {...props} />;
       case 'github':
         return <GitHubIcon {...props} />;
       case 'googlePlay':
@@ -28,6 +29,8 @@ function IconButtonBar({ links = {} }) {
         return <EmailIcon {...props} />;
       case 'linkedIn':
         return <LinkedInIcon {...props} />;
+      case 'website':
+        return <LanguageIcon {...props} />;
       default:
         return <></>;
     }
