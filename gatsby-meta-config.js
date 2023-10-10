@@ -14,11 +14,7 @@ module.exports = {
     name: `추교현`,
     bio: {
       role: `소프트웨어 엔지니어`,
-      description: [
-        '세상에 선한 영향력을 주는',
-        '성실함과 꾸준함에 자신있는',
-        '세상에 필요한 것을 만드는',
-      ],
+      description: ['세상에 선한 영향력을 주는', '성실함과 꾸준함이 강점인'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
