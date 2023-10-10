@@ -1,6 +1,6 @@
 ---
-emoji: 👋🏼
-title: 👋🏼 Bye 2021 & Hello 2022
+emoji: 🙇🏻‍♂️
+title: 🙇🏻‍♂️ Bye 2021 & Hello 2022
 date: '2022-01-01 09:00:00'
 author: 추교현
 tags: Essay

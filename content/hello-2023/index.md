@@ -1,6 +1,6 @@
 ---
-emoji: 👋🏼
-title: 👋🏼 Bye 2022 & Hello 2023
+emoji: 🙇🏻‍♂️
+title: 🙇🏻‍♂️ Bye 2022 & Hello 2023
 date: '2023-01-01 09:00:00'
 author: 추교현
 tags: Essay
