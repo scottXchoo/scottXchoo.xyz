@@ -7,7 +7,7 @@ tags: Self-supervised_learning
 categories: ML/DL
 ---
 
-Self-supervised learning 개념에 대해서 정리하고자 합니다.@
+Self-supervised learning 개념에 대해서 정리합니다.@
 
 ---
 
@@ -27,6 +27,8 @@ Self-supervised learning 개념에 대해서 정리하고자 합니다.@
 
 # Architecture
 
+![self-supervised-1.png](self-supervised-1.png)
+
 Self-Supervised Learning은 Pre-trained 모델 생성과 Downstream task 라는 두 단계로 구성되어 있습니다.
 
 Pre-trained 모델은 대량의 Untagged data를 이용해 해당 응용에 대해 전반적인 특징을 학습하는 단계입니다. 자연어 처리의 대세가 된 Google의 BERT도 Self-supervised learning 학습 방법이 적용되었습니다. BERT에서는 전체 문장에서 하나의 단어를 지운(Masking) 후 해당 단어가 무엇이었을지 추측하는 방법과 다음에 어떠한 문장이 올지 추측하는 방법으로 Pre-trained 모델 학습을 진행합니다. Pre-trained model 학습 시에는 일반적인 문장을 그대로 활용하기 때문에 Tagging이 필요없습니다.
@@ -36,8 +38,11 @@ Pre-trained 모델은 대량의 Untagged data를 이용해 해당 응용에 대�
 # Reference
 
 [[1] Unsupervised Visual Representation Learning Overview： Toward Self-Supervision](https://hoya012.github.io/blog/Self-Supervised-Learning-Overview/)
+
 [[2] Self-supervised learning (자기지도 학습) 이란?](https://lifeisenjoyable.tistory.com/15)
+
 [[3] Self-supervised learning (자기지도학습)과 Contrastive learning (대조학습): 개념과 방법론 톺아보기](https://sanghyu.tistory.com/184)
+
 [[4] [CV] Self-supervised learning(자기주도학습)과 Contrastive learning - 스스로 학습하는 알고리즘](https://daeun-computer-uneasy.tistory.com/37)
 
 ---
