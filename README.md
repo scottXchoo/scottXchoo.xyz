@@ -10,17 +10,17 @@ Don't reinvent the wheel (바퀴를 다시 발명하지 마라).
 ## 🚀 추가 기능들
 ### To-Do List
 - [ ] Bio에 인스타그램 추가
-- [ ] 구글 애널리틱스 등록
+- [ ] ~~[구글 애널리틱스 등록](https://analytics.google.com/analytics/web/?pli=1#/p413988279/reports/intelligenthome)~~ ✅
 - [ ] ~~URL 연결~~ ✅
 - [ ] ~~22년 & 23년 회고 글(Essay) 추가~~ ✅
 
 ### Feature List
 
 - [ ] 구독 기능
-- [ ] 댓글 기능 추가
 - [ ] 방문자 수 보여주기
 - [ ] 포스트에 썸네일 사진 추가
 - [ ] Timeline : 토글 기능 (상세 설명)
+- [ ] ~~댓글 기능 추가~~ ✅
 - [ ] ~~포스트에 Subtitle 추가 (현재는 본문 내용 자른 것)~~ ✅
 
 ## ✨ 기존 기능들
