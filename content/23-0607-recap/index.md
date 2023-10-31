@@ -1,10 +1,10 @@
 ---
-emoji: ✨
-title: ✨ 2023년 06-07월 회고&인사이트
+emoji: 🙇🏻‍♂️
+title: 🙇🏻‍♂️ 2023년 06-07월 회고&인사이트
 date: '2023-08-06 09:00:00'
 author: 추교현
 tags: 회고
-categories: ESSAY
+categories: 🙇🏻‍♂️ESSAY
 ---
 
 속도보다는 방향. 정말 많은 변화가 있었던 6-7월이었다.@

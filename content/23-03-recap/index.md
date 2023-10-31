@@ -1,10 +1,10 @@
 ---
-emoji: ✨
-title: ✨ 2023년 03월 회고&인사이트
+emoji: 🙇🏻‍♂️
+title: 🙇🏻‍♂️ 2023년 03월 회고&인사이트
 date: '2023-02-31 09:00:00'
 author: 추교현
 tags: 회고
-categories: ESSAY
+categories: 🙇🏻‍♂️ESSAY
 ---
 
 기분이 태도가 되지 말자.@

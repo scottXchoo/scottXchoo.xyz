@@ -1,10 +1,10 @@
 ---
-emoji: ✨
-title: ✨ 2023년 02월 회고&인사이트
+emoji: 🙇🏻‍♂️
+title: 🙇🏻‍♂️ 2023년 02월 회고&인사이트
 date: '2023-02-28 09:00:00'
 author: 추교현
 tags: 회고
-categories: ESSAY
+categories: 🙇🏻‍♂️ESSAY
 ---
 
 지금 하고 있는 일을 정말 사랑하는가?@

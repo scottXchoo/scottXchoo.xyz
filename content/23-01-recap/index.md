@@ -1,10 +1,10 @@
 ---
-emoji: ✨
-title: ✨ 2023년 01월 회고&인사이트
+emoji: 🙇🏻‍♂️
+title: 🙇🏻‍♂️ 2023년 01월 회고&인사이트
 date: '2023-01-30 09:00:00'
 author: 추교현
 tags: 회고
-categories: ESSAY
+categories: 🙇🏻‍♂️ESSAY
 ---
 
 행복의 원천은 '기대감'과 '감사함'이다.@

@@ -4,7 +4,7 @@ title: ⛓️ 이더리움 합의 알고리즘 Gasper? Casper? GHOST?
 date: '2022-09-28 08:00:00'
 author: 추교현
 tags: Ethereum Consensus_Algorithm
-categories: BLOCKCHAIN
+categories: ⛓️BLOCKCHAIN
 ---
 
 Merge 업데이트 이후, 이더리움 합의 알고리즘에 대해서 알아봅시다.@

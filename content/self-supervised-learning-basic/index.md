@@ -1,10 +1,10 @@
 ---
-emoji: 😄
-title: 😄 Self-supervised learning 개념 이해하기
+emoji: 🤖
+title: 🤖 Self-supervised learning 개념 이해하기
 date: '2023-10-13 08:00:00'
 author: 추교현
 tags: Self-supervised_learning
-categories: ML/DL
+categories: 🤖ML/DL
 ---
 
 Self-supervised learning 개념에 대해서 정리합니다.@

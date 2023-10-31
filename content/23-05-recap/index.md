@@ -1,10 +1,10 @@
 ---
-emoji: ✨
-title: ✨ 2023년 05월 회고&인사이트
+emoji: 🙇🏻‍♂️
+title: 🙇🏻‍♂️ 2023년 05월 회고&인사이트
 date: '2023-06-05 09:00:00'
 author: 추교현
 tags: 회고
-categories: ESSAY
+categories: 🙇🏻‍♂️ESSAY
 ---
 
 입사한지 벌써 1년 & 독재자의 마음을 알겠다.@

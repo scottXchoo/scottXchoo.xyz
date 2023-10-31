@@ -1,10 +1,10 @@
 ---
-emoji: 🔬
-title: 🔬 CNN 개념 이해하기
+emoji: 🤖
+title: 🤖 CNN 개념 이해하기
 date: '2023-10-10 20:00:00'
 author: 추교현
 tags: DL CNN
-categories: ML/DL
+categories: 🤖ML/DL
 ---
 
 CNN 개념에 대해서 정리하고자 합니다.@

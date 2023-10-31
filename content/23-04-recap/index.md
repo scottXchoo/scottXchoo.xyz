@@ -1,10 +1,10 @@
 ---
-emoji: ✨
-title: ✨ 2023년 04월 회고&인사이트
+emoji: 🙇🏻‍♂️
+title: 🙇🏻‍♂️ 2023년 04월 회고&인사이트
 date: '2023-05-02 09:00:00'
 author: 추교현
 tags: 회고
-categories: ESSAY
+categories: 🙇🏻‍♂️ESSAY
 ---
 
 주변이 잘 되는 것이 결국 내가 잘 되는 것이다.@
