@@ -25,8 +25,8 @@ function PostTabs({ tabIndex, onChange, tabs, posts, showMoreButton }) {
         </Tabs>
       </div>
       <PostCardColumn
-        posts={showMoreButton ? tabPosts.slice(0, 4) : tabPosts}
-        showMoreButton={showMoreButton && tabPosts.length > 4}
+        posts={showMoreButton ? tabPosts.slice(0, 6) : tabPosts}
+        showMoreButton={showMoreButton && tabPosts.length > 6}
         moreUrl={`posts/${tabIndex === 0 ? '' : tabs[tabIndex]}`}
       />
     </div>
