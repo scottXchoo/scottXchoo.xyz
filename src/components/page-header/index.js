@@ -34,10 +34,14 @@ function PageHeader({ siteTitle }) {
             </div>
             <div className="trailing-section">
               <Link className="link" to="/about">
-                ABOUT
+                About
               </Link>
+
               <Link className="link" to="/posts">
-                POST
+                Post
+              </Link>
+              <Link className="link" to="https://github.com/scottXchoo" target="_blank">
+                GitHub
               </Link>
               {/* 지운 이유 : 서치 기능이 잘 안 됨... */}
               {/* <PostSearch
