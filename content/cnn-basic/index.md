@@ -7,7 +7,7 @@ tags: DL CNN
 categories: 🤖ML/DL
 ---
 
-CNN 개념에 대해서 정리하고자 합니다.@
+CNN 개념에 대해서 정리합니다.@
 
 ---
 
