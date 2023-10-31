@@ -6,7 +6,7 @@ module.exports = {
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
+      repo: `scottXchoo/scottXchoo.xyz`, // `zoomkoding/zoomkoding-gatsby-blog`,
     },
   },
   ga: '0', // Google Analytics Tracking ID
@@ -14,7 +14,7 @@ module.exports = {
     name: `추교현`,
     bio: {
       role: `소프트웨어 엔지니어`,
-      description: ['세상에 선한 영향력을 주는', '성실함과 꾸준함이 강점인'],
+      description: ['세상에 선한 영향력을 주고 싶은', '성실함과 꾸준함이 강점인'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
