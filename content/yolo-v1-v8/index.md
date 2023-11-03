@@ -1,7 +1,7 @@
 ---
 emoji: 🤖
 title: 🤖 YOLO v1부터 v8까지 정리
-date: '2023-11-11 09:00:00'
+date: '2023-11-02 09:00:00'
 author: 추교현
 tags: DL
 categories: 🤖ML/DL
