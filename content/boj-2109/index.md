@@ -31,7 +31,6 @@ for _ in range(N):
     lectures.append((d, p)) # [1]
 
 lectures.sort() # [2]
-result = 0
 q = []
 
 for lecture in lectures:
