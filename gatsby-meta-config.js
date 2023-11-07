@@ -19,6 +19,8 @@ module.exports = {
     },
     social: {
       github: `https://github.com/scottXchoo`, // `https://github.com/zoomKoding`,
+      instagram: `https://www.instagram.com/dev.chooble/`,
+      x: `https://twitter.com/scottXchoo`,
       linkedIn: `https://www.linkedin.com/in/scott-choo-a61aa5155/`, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
       email: `ckh0601@gmail.com`, // `zoomkoding@gmail.com`,
     },
