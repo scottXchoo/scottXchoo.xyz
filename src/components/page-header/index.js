@@ -33,13 +33,14 @@ function PageHeader({ siteTitle }) {
               </Link>
             </div>
             <div className="trailing-section">
-              <Link className="link" to="/about">
+              <Link className="link" to="https://www.chooblog.xyz/" target="_blank">
                 About
               </Link>
 
               <Link className="link" to="/posts">
                 Post
               </Link>
+
               <Link className="link" to="https://github.com/scottXchoo" target="_blank">
                 GitHub
               </Link>
