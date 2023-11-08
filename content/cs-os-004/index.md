@@ -1,6 +1,6 @@
 ---
 emoji: 🖥️
-title: 🖥️ [운영체제] 인터럽트(Interrupt) & DMA(Direct Memory Access)란? | 폴링(Polling), 비동기식 & 동기식 I/O
+title: 🖥️ [운영체제] 인터럽트(Interrupt) & DMA(Direct Memory Access)란?
 date: '2023-11-08 09:00:00'
 author: 추교현
 tags: 운영체제
