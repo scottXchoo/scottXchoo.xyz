@@ -1,10 +1,10 @@
 ---
-emoji: 📌
-title: 📌 [CAU] 발표자료 링크 모음집
+emoji: 🗂️
+title: 🗂️ [CAU] 발표자료 링크 모음집
 date: '2023-09-01 09:00:00'
 author: 추교현
 tags: 발표 CAU
-categories: 📌ETC
+categories: 🗂️RECORD
 ---
 
 학교 수업 중 사용한 발표자료 링크들 입니다.@
