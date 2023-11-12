@@ -1,7 +1,7 @@
 ---
 emoji: 🔥
 title: 🔥 Supernova 프로젝트
-date: '2023-11-12 16:00:00'
+date: '2023-07-14 16:00:00'
 author: 추교현
 tags: 프로젝트
 categories: 🔥PROJECT
