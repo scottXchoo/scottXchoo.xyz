@@ -13,6 +13,8 @@ A41에서 주니어 프론트엔드 개발자로 1년 3개월 동안 재직하�
 
 ![pr-supernova.gif](pr-supernova.gif)
 
+[#GitHub](https://github.com/scottXchoo/Supernova_Front-end/tree/main) [#YouTube](https://youtu.be/VG-m5jsV0Ck?si=gB6YLwXGC7rvIz1Q)
+
 ## 프로젝트 소개
 
 Supernova는 Liquid staking, Staked swap only for staked assets 그리고 Meta governance platform on Cosmos가 특징인 DeFI(탈중앙화 금융 서비스)입니다.
