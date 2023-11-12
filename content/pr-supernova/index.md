@@ -7,41 +7,29 @@ tags: 프로젝트
 categories: 🔥PROJECT
 ---
 
-DeFi(탈중앙화 금융 서비스)인 Supernova 프로젝트를 소개합니다.@
+A41에서 주니어 프론트엔드 개발자로 1년 3개월 동안 재직하면서 치열하게 & 즐겁게 개발했던 DeFi(탈중앙화 금융 서비스)인 Supernova 프로젝트를 소개합니다.@
 
 ---
 
-## 프로젝트 개요
+![pr-supernova.gif](pr-supernova.gif)
+
+## 프로젝트 소개
 
 Supernova는 Liquid staking, Staked swap only for staked assets 그리고 Meta governance platform on Cosmos가 특징인 DeFI(탈중앙화 금융 서비스)입니다.
 
-- Liquid staking : 유저가 암호화폐를 서비스에 스테이킹(staking; 예치)하면, 스테이킹된 자산의 가치에 맞는 서비스만의 토큰을 발행하여 유저에게 제공한다.
-
-- Staked swap only for staked assets : 스테이킹된 자산만을 위한 `staked swap` 기능이다 (기존 swap과는 다른 수학 공식을 사용함).
-
-- Meta governance platform on Cosmos : 코스모스 블록체인에 있는 여러 앱체인의 거버넌스들을 하나의 플랫폼으로 묶는다.
-
-## 프로젝트 기간
+### 프로젝트 기간
 
 : 22.05 - 23.03 (11M)
 
-## 사용한 기술 스택
+### 사용한 기술 스택
 
-### 코어 기술
+**코어 기술** : Next.js / React / TypeScript
 
-- Next.js
-- React
-- TypeScript
+**상태관리** : Recoil
 
-### 상태관리
+**스타일링** : Tailwind CSS
 
-- Recoil
-
-### 스타일링
-
-- Tailwind CSS
-
-## 프로젝트에서 한 일
+## 진행했던 업무
 
 ### [1] useInput 커스텀 훅 개발
 
@@ -252,7 +240,7 @@ export const executeContractTx = async (
 
 ### [3] Auto-Claim 예상 시간 계산하는 로직 개발 (Feat. React Query)
 
-> React Query를 사용하여 복잡한 데이터 의존성을 효과적으로 관리하고, Auto-Claim 예상 시간을 계산하여 이를 사용자에게 정확히 보여주는 로직을 구현
+> React Query를 사용하여 복잡한 데이터 의존성을 효과적으로 관리하고, Auto-Claim 예상 시간을 계산하여 이를 사용자에게 정확히 보여주는 로직을 구현했습니다.
 
 **useActualLazyMintingTime 훅**
 
