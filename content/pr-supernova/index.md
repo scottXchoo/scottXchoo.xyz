@@ -7,7 +7,7 @@ tags: 프로젝트
 categories: 🔥PROJECT
 ---
 
-A41에서 주니어 프론트엔드 개발자로 1년 3개월 동안 재직하면서 치열하게 & 즐겁게 개발했던 DeFi(탈중앙화 금융 서비스)인 Supernova 프로젝트를 소개합니다.@
+주니어 프론트엔드 개발자로 1년 3개월 동안 재직하면서 즐겁게 개발했던 DeFi(탈중앙화 금융 서비스)인 Supernova 프로젝트를 소개합니다.@
 
 ---
 
@@ -141,10 +141,13 @@ const useInput = ({
 };
 ```
 
-- [1] : InputProps의 interface를 정의합니다.
-- [2] : max, min, half를 useMemo로 정의합니다.
-- [3] : isMax, isMin, isHalf, isOverMax는 [2]에서 만든 max, min, half를 사용하여 Max 인지 Min 인지 Half 인지 Max를 넘었는지 판단하는 로직입니다.
-- [4] toggleMax, toggleMin, toggleHalf는 `Max, Min, Half 토글 버튼`을 눌렀을 때, 각각 isMax, isMin, isHalf이 true 면, setInput에 rawInput(사용자가 적은 입력값)을 넣고 그렇지 않으면, max, min, half를 넣는 로직입니다.
+[1] InputProps의 interface를 정의합니다.
+
+[2] max, min, half를 useMemo로 정의합니다.
+
+[3] isMax, isMin, isHalf, isOverMax는 [2]에서 만든 max, min, half를 사용하여 Max 인지 Min 인지 Half 인지 Max를 넘었는지 판단하는 로직입니다.
+
+[4] toggleMax, toggleMin, toggleHalf는 `Max, Min, Half 토글 버튼`을 눌렀을 때, 각각 isMax, isMin, isHalf이 true 면, setInput에 rawInput(사용자가 적은 입력값)을 넣고 그렇지 않으면, max, min, half를 넣는 로직입니다.
 
 Q. rawInput과 input 상태를 이렇게 두 개로 분리한 이유는 무엇일까요?
 
