@@ -47,7 +47,6 @@ cnt, direct = 0, 0
 dq = deque()
 dq.append((0, 0))
 
-
 def turn(c):
   global direct
   if c == 'L': # direct -1 => 3
@@ -55,12 +54,11 @@ def turn(c):
   else:
     direct = (direct + 1) % 4
 
-
 while True:
   cnt += 1
   x += dx[direct]
   y += dy[direct]
-  if x < 0 or x >= N or y < 0 or y >= N:
+  if not(0 <= x < N and 0 <= y < N):
     break
 
   if graph[x][y] == 2:

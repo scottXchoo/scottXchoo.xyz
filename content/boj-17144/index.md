@@ -32,7 +32,7 @@ board, cleaner = [], []
 for i in range(R):
   board.append(list(map(int, input().split())))
   for j in range(len(board[i])):
-    if board[i][j] == -1: # [1]
+    if board[i][j] == -1: # [1] 공기청정기가 있는 좌표를 cleaner 리스트에 넣어준다.
       cleaner.append((i, j))
 
 
@@ -45,13 +45,17 @@ def dust_diffusion():
         turn = 0
         for dx, dy in steps:
           nx, ny = i + dx, j + dy
-          if 0 <= nx < R and 0 <= ny < C and (nx, ny) not in cleaner: # [2]
+          # [2] 맵 안에 있고 공기청정기가 있는 곳이 아니라면,
+          if 0 <= nx < R and 0 <= ny < C and (nx, ny) not in cleaner:
             turn += 1
-            diffusion[nx][ny] += board[i][j] // 5 # [3]
-        board[i][j] = board[i][j] - ((board[i][j] // 5) * turn) # [4]
+            # [3] `diffusion[nx][ny]`는 `board[i][j]`에서 5로 나눈 몫을 더해준다.
+            diffusion[nx][ny] += board[i][j] // 5
+        # [4] 미세먼지가 주변으로 다 날아가고 남은 값을 업데이트해 준다.
+        board[i][j] = board[i][j] - ((board[i][j] // 5) * turn)
   for i in range(R):
     for j in range(C):
-      board[i][j] += diffusion[i][j] # [5]
+      # [5] `board[i][j]`는 현재 미세먼지가 주변에 날아간 뒤, 남은 값만 있기에 다른 곳에서 날라온 미세먼지를 더해준다.
+      board[i][j] += diffusion[i][j]
 
 
 def dust_clean_up():
@@ -63,10 +67,10 @@ def dust_clean_up():
     if x == up and y == 0:
       break
     nx, ny = x + up_step[direct][0], y + up_step[direct][1]
-    if nx < 0 or nx >= R or ny < 0 or ny >= C:
+    if not(0 <= nx < R and 0 <= ny < C):
       direct += 1  # 맵을 벗어나면, 방향을 바꿔주기 Ex) 동 -> 북
       continue
-    board[x][y], prev = prev, board[x][y] # [6]
+    board[x][y], prev = prev, board[x][y] # [6] 이전 값을 저장하기 위해서 이전 값과 현재 값을 바꿔준다.
     x, y = nx, ny # [7]
   return
 
@@ -80,15 +84,15 @@ def dust_clean_down():
     if x == down and y == 0:
       break
     nx, ny = x + down_step[direct][0], y + down_step[direct][1]
-    if nx < 0 or nx >= R or ny < 0 or ny >= C:
+    if not(0 <= nx < R and 0 <= ny < C):
       direct += 1  # 맵을 벗어나면, 방향을 바꿔주기 Ex) 동 -> 남
       continue
     board[x][y], prev = prev, board[x][y] # [6]
-    x, y = nx, ny # [7]
+    x, y = nx, ny # [7] 그리고 x, y를 nx, ny로 업데이트해 준다.
   return
 
 
-for _ in range(T): # [8]
+for _ in range(T): # [8] 1초마다 3개의 함수가 실행되는데, 이를 T초 진행해 준다.
   dust_diffusion()
   dust_clean_up()
   dust_clean_down()
@@ -108,23 +112,7 @@ print(ans)
 
 그러면, 1) 미세먼지의 확산, 2) 위에서 반시계방향 순환, 3) 아래에서 시계방향 순환 이렇게 3가지 함수를 사용해야 된다는 것을 알 수 있습니다.
 
-[1] 공기청정기가 있는 좌표를 cleaner 리스트에 넣어준다.
-
-[2] 맵 안에 있고 공기청정기가 있는 곳이 아니라면
-
-[3] `diffusion[nx][ny]`는 `board[i][j]`에서 5로 나눈 몫을 더해준다.
-
-[4] 미세먼지가 주변으로 다 날아가고 남은 값을 업데이트해 준다.
-
-[5] `board[i][j]`는 현재 미세먼지가 주변에 날아간 뒤, 남은 값만 있기에 다른 곳에서 날라온 미세먼지를 더해준다.
-
-[6] 이전 값을 저장하기 위해서 이전 값과 현재 값을 바꿔준다.
-
-[7] 그리고 x, y를 nx, ny로 업데이트해 준다.
-
-[8] 1초마다 3개의 함수가 실행되는데, 이를 T초 진행해 준다.
-
-`시뮬레이션 & 구현`은 확실히 시간도 오래 걸리고 한번에 생각하기 어렵네요... 많은 연습이 필요한 것 같습니다.
+`시뮬레이션 & 구현` 문제는 확실히 시간도 오래 걸리고 한 번에 생각하기 어렵네요... 많은 연습이 필요한 것 같습니다.
 
 ---
 

@@ -34,7 +34,7 @@ def move(board, dir):
   if dir == 0:  # 동쪽
     for i in range(N):
       top = N - 1
-      for j in range(N - 2, -1, -1):  # N-1, ... , 0
+      for j in range(N-2, -1, -1):  # N-2, ... , 0
         if board[i][j]:  # 해당 숫자가 0이 아니면
           tmp = board[i][j]  # tmp에 값을 넣고
           board[i][j] = 0  # 0으로 초기화한 뒤,
@@ -64,7 +64,7 @@ def move(board, dir):
   elif dir == 2:  # 남쪽
     for j in range(N):
       top = N - 1
-      for i in range(N - 2, -1, -1):
+      for i in range(N-2, -1, -1):
         if board[i][j]:
           tmp = board[i][j]
           board[i][j] = 0
@@ -125,7 +125,7 @@ print(ans)
 
 ![boj-12100-1.jpeg](boj-12100-1.jpeg)
 
-정리하면, `deepcopy`를 통해 이전 이동의 결과를 기반으로 탐색하면서 각 탐색 단계에서 다른 탐색에 영향을 주지 않을 수 있게 됩니다. (괜히 골드2가 아니네요)
+정리하면, `deepcopy`를 통해 이전 이동의 결과를 기반으로 탐색하면서 각 탐색 단계에서 다른 탐색에 영향을 주지 않을 수 있게 됩니다. (괜히 골드2 문제가 아니네요)
 
 ![boj-12100-2.png](boj-12100-2.png)
 

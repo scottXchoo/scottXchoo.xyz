@@ -29,16 +29,18 @@ input = sys.stdin.readline
 N = int(input())
 M = int(input())
 broken = list(map(int, input().split()))
+# [1] 현재 채널에서 +/-만 사용해서 이동
+min_cnt = abs(100 - N)
 
-min_cnt = abs(100 - N)  # [1]
-
-for nums in range(1000001):  # [2]
+for nums in range(1000001):  # [2] 무식하게 0부터 1000000까지 탐색
   nums = str(nums)
 
   for j in range(len(nums)):
-    if int(nums[j]) in broken:  # [3]
+    # [3] nums에 broken가 있다면, break
+    if int(nums[j]) in broken:
       break
-    elif j == len(nums) - 1:  # [4]
+    # [4] 마지막까지 왔다는 것은 broken이 없었다는 것
+    elif j == len(nums) - 1:
       min_cnt = min(min_cnt, abs(int(nums) - N) + len(nums))
 
 print(min_cnt)
@@ -47,14 +49,6 @@ print(min_cnt)
 ## 풀이 및 배운 점
 
 요즘 BFS/DFS랑 그리디 유형만 풀어서 그런지 무식하게 수를 0부터 1씩 올리면서 탐색하는 방법을 까먹었습니다. 단순하지만, 기본기가 중요한 문제였던 것 같아요.
-
-[1] 현재 채널에서 +/-만 사용해서 이동
-
-[2] 무식하게 0부터 1000000까지
-
-[3] nums에 broken가 있다면, break
-
-[4] 마지막까지 왔다면, min_cnt 비교 후 업데이트
 
 ---
 
