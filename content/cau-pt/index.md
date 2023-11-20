@@ -24,6 +24,8 @@ categories: 🗂️RECORD
 
 ### "SW 1 (C언어)" 수업
 
+> [C언어 온라인 컴파일러](https://www.programiz.com/c-programming/online-compiler/)
+
 - [#1. 과제](https://scott-choo.notion.site/3-HW-1-b4282693f9934fd7850303606a5d026f?pvs=4)
 - [#2. 과제](https://scott-choo.notion.site/4-HW-2-e6bf1eb47cfb4485a0b6084e59ba479e?pvs=4)
 - [#3. 과제](https://scott-choo.notion.site/7-HW-3-ab5ecb7d48b54922ac0c05f572beef17?pvs=4)
