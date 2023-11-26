@@ -32,10 +32,10 @@ waters.sort()
 cnt, cur = 0, 0
 
 for start, end in waters:
-	# 이미 덮여있다는 뜻 : start를 cur로 변경
+  # 이미 덮여있다는 뜻 : start를 cur로 변경
   if cur > start:
     start = cur
-	# start가 end를 넘을 때까지 반복
+  # start가 end를 넘을 때까지 반복
   while start < end:
     start += L # L만큼 증가
     cnt += 1

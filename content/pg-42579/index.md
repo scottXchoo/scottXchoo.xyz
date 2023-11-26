@@ -25,6 +25,8 @@ categories: 🕹️PS
 
 ## 정답 코드
 
+### 내가 푼 풀이
+
 ```python
 def solution(genres, plays):
     answer = []
@@ -58,6 +60,35 @@ def solution(genres, plays):
 
     return answer
 ```
+
+### 다른 풀이
+
+```python
+def solution(genres, plays):
+    answer = []
+    genreDict = {genre:[] for genre in set(genres)}
+
+    for e in zip(genres, plays, range(len(plays))):
+        genreDict[e[0]].append([e[1], e[2]]) # genreDict[e[0]] : []
+
+    genreSort = sorted(list(genreDict.keys()), key = lambda x: sum(t[0] for t in genreDict[x]), reverse = True)
+
+    for genre in genreSort:
+        temp = [e[1] for e in sorted(genreDict[genre], key = lambda x: (x[0], -x[1]), reverse = True)] # x[0]은 내림차순 그 이후, x[1]은 오름차순
+        answer += temp[:min(len(temp), 2)] # 최대 2까지 자르는 방법
+
+    return answer
+```
+
+> 다른 분 풀이인데, lambda와 zip 등 정말 기가막히게 잘 구현하셔서 추가했습니다.
+
+`genreDict = {genre:[] for genre in set(genres)}` : {'classic': [], 'pop': []} 이렇게 묶을 수가 있습니다.
+
+`for e in zip(genres, plays, range(len(plays))):` : ('classic', 500, 0), ('pop', 600, 1), ... 저는 매번 따로 처리했었는데, 이렇게 zip으로 한꺼번에 묶을 수가 있습니다. (파이썬 최고ㅠㅠ)
+
+`genreDict[e[0]].append([e[1], e[2]])` : {'pop': [[600, 1], [2500, 4]], 'classic': [[500, 0], [150, 2], [800, 3]]} 이렇게 각 genre를 key로 삼고 재생횟수와 고유번호를 함께 갖고 있을 수 있습니다.
+
+`genreSort = sorted(list(genreDict.keys()), key = lambda x: sum(t[0] for t in genreDict[x]), reverse = True)` : `genreDict.keys()`인 genre들을 기준으로 이를 x로 정의한 뒤, 재생횟수를 다 더한 것을 key로 내림차순 정렬합니다 (lambda 활용하는 방법 잘 익혀둬야겠어요).
 
 ## 풀이 및 배운 점
 

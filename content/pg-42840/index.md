@@ -42,7 +42,7 @@ def solution(answers):
 
 ## 풀이 및 배운 점
 
-`one_list[idx % len(one_list)]` : 반복되는 패턴을 이런 식으로 해결할 수 있습니다.
+`one_list[idx % len(one_list)]` : 반복되는 패턴을 이런 식으로 해결할 수 있습니다. 뭔가 반복이 된다? 나머지로 해결할 생각하기!
 
 `score == max(scores)` : 리스트인 scores에 max를 넣으면, 바로 최댓값을 리턴해 줍니다.
 
