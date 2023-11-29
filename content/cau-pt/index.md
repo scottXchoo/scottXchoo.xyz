@@ -21,6 +21,7 @@ categories: 🗂️RECORD
 
 - [#0. 프로젝트 제안 : CNN을 활용한 폐렴 진단 딥러닝 모델](https://www.miricanvas.com/v/12gkmd2)
 - [#1. 프로젝트 제안 : R=VD 트랜스포머 기반의 실시간 폭력 사태 감지 시스템](https://www.miricanvas.com/v/12kqjie)
+- [#2. 프로젝트 : 중간 점검](https://www.miricanvas.com/v/12nevnf)
 
 ### "SW 1 (C언어)" 수업
 
