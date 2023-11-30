@@ -1,6 +1,6 @@
 ---
 emoji: 🕹️
-title: 🕹️ [백준] 오아시스 재결합 - 3015 | Platinum V
+title: 🕹️ [백준] 오아시스 재결합 - 3015 | Platinum V (파이썬)
 date: '2023-11-01 19:00:00'
 author: 추교현
 tags: 스택 자료구조

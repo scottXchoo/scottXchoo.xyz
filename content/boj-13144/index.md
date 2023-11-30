@@ -1,6 +1,6 @@
 ---
 emoji: 🕹️
-title: 🕹️ [백준] List of Unique Numbers - 13144 | Gold 4
+title: 🕹️ [백준] List of Unique Numbers - 13144 | Gold 4 (파이썬)
 date: '2023-11-09 13:00:00'
 author: 추교현
 tags: 투 포인터

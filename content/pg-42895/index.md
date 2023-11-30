@@ -1,6 +1,6 @@
 ---
 emoji: 🕹️
-title: 🕹️ [프로그래머스] N으로 표현 - 42895 | Level 3
+title: 🕹️ [프로그래머스] N으로 표현 - 42895 | Level 3 (파이썬)
 date: '2023-11-24 16:00:00'
 author: 추교현
 tags: DP
