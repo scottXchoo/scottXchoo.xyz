@@ -56,6 +56,7 @@ def change_avg():
         all_sum += graph[i][j]
   if avg_cnt == 0:
     return False
+
   avg = all_sum / avg_cnt
   for i in range(N):
     for j in range(M):
@@ -84,12 +85,14 @@ def solve(x, y):
           ny = 0
       if not (0 <= nx < N and 0 <= ny < M) or visited[nx][ny]:
         continue
+
       if graph[nx][ny] == value:
         cnt += 1
         graph[nx][ny] = 0
         dq.append((nx, ny))
         visited[nx][ny] = 1
-  if cnt == 0:
+
+  if cnt == 0: # 인접한 수가 없으면, 원상복귀
     graph[x][y] = value
   return cnt
 
@@ -109,7 +112,7 @@ for _ in range(T):
       for j in range(M):
         if not visited[i][j] and graph[i][j] != 0:
           cnt += solve(i, j)
-    if cnt == 0:
+    if cnt == 0: # 지워진 숫자가 없다면?
       change_avg()
 
 ans = 0

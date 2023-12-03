@@ -47,7 +47,7 @@ for _ in range(N):
     maps[nx][ny] = 1
     x, y = nx, ny
 
-def get_count():
+def get_cnt():
   global maps
   cnt = 0
   for i in range(100):
@@ -58,7 +58,7 @@ def get_count():
 
 ans = 0
 for i in range(N):
-  ans = get_count()
+  ans = get_cnt()
 
 print(ans)
 ```

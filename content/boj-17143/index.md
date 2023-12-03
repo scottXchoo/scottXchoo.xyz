@@ -117,6 +117,18 @@ board = new_board
   - 순행(DOWN, RIGHT)일 때는 `위치`만큼을 더한다.
 - cycle이 반복되기 때문에 `speed %= cycle`로 나머지만 구한 뒤, R(또는 C)와 비교하여 `cycle - speed` 혹은 `speed`를 리턴한다.
 
+[5]
+
+```python
+new_board[ni][nj] = max(
+  new_board[ni][nj],
+  (board[i][j][0], nd, board[i][j][2]),
+  key = lambda x: x[2] # z를 기준으로 max 찾기
+)
+```
+
+max에도 lambda를 써서 기준을 유연하게 변경할 수 있습니다.
+
 ---
 
 "50대의 추교현이 20대의 추교현에게 감사할 수 있게끔 하루하루 최선을 다해 살고자 합니다."
