@@ -33,6 +33,7 @@ categories: 🗂️RECORD
 - [#4. 과제](https://scott-choo.notion.site/10-HW-4-fd8e361727a745d190af2d584e6de93b?pvs=4)
 - [#5. 과제](https://scott-choo.notion.site/11-HW-5-3d6d92e660984487866cf2fcd81fec9a?pvs=4)
 - [#6. 과제](https://scott-choo.notion.site/12-HW-6-26c737fb0fff4d81a503dfc4baba24c0?pvs=4)
+- [#7. 과제](https://scott-choo.notion.site/13-HW-7-21edca7f913547509b4e77fada7f0384?pvs=4)
 - [#8. 과제](https://scott-choo.notion.site/14-HW-8-b27a8bb75fb640a9af92087229e011aa?pvs=4)
 
 ### 시스템제어실험
