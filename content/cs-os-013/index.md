@@ -25,17 +25,23 @@ categories: 🖥️CS
 
 ## 페이지 교체 알고리즘
 
-### FIFO (First In First Out Algorithm)
-
-FIFO는 제일 먼저 들어온 페이지를 가장 먼저 내쫓는 방법입니다. 구현하기 쉽지만, 페이지 사용 빈도나 중요도를 고려하지 않아 오버헤드가 발생하는 단점이 있습니다.
-
 ### OPT (Optimal Algorithm)
+
+![cs-os-13-1.png](cs-os-13-1.png)
 
 OPT는 가장 먼 미래에 참조되는 page를 대체하는 방법입니다. 이 방법은 항상 최적의 결과를 갖습니다.
 
 하지만, 미래의 참조를 모두 알고 있어야 하므로 실제로 사용하기는 어렵습니다. 그래서 다른 알고리즘의 성능 비교 기준으로 사용됩니다.
 
+### FIFO (First In First Out Algorithm)
+
+![cs-os-13-2.png](cs-os-13-2.png)
+
+FIFO는 제일 먼저 들어온 페이지를 가장 먼저 내쫓는 방법입니다. 구현하기 쉽지만, 페이지 사용 빈도나 중요도를 고려하지 않아 오버헤드가 발생하는 단점이 있습니다.
+
 ### LRU (Least Recently Used Algorithm)
+
+![cs-os-13-3.png](cs-os-13-3.png)
 
 LRU는 가장 오래전에 참조된 페이지를 지우는 방법입니다.
 
@@ -49,6 +55,8 @@ LRU에 비해 장기적인 시간 규모를 보기 때문에 페이지의 인기
 
 ### Second Chance Algorithm (CLOCK Algorithm)
 
+![cs-os-13-4.png](cs-os-13-4.png)
+
 최근에 참조되었는지를 나타내는 Reference bit가 0인 것을 찾을 때까지 시계처럼 한 바퀴씩 포인터를 이동하다가 0인 것을 찾으면 해당 페이지를 교체하는 방법입니다.
 
 만약 Reference bit가 1인 페이지를 만나면, 0으로 바꿔주고 지나갑니다. 그리고 한 바퀴 돌고 왔는데도 여전히 0이면 해당 페이지를 교체합니다.
@@ -56,6 +64,8 @@ LRU에 비해 장기적인 시간 규모를 보기 때문에 페이지의 인기
 FIFO와 유사하지만, 각 페이지에 Reference bit를 사용해서 최근성을 참고한 알고리즘입니다.
 
 ## 쓰레싱 (Thrasing)
+
+![cs-os-13-5.png](cs-os-13-5.png)
 
 쓰레싱은 프로세스가 원활한 수행에 필요한 최소한의 프레임을 할당받지 못하여 실행보다 스와핑 하는데 더 많은 시간을 소모하는 현상입니다.
 
@@ -69,9 +79,15 @@ FIFO와 유사하지만, 각 페이지에 Reference bit를 사용해서 최근�
 
 ### Working-Set Model
 
+![cs-os-13-6.png](cs-os-13-6.png)
+
 Working-Set Model은 가능한 최대 멀티프로그래밍 정도를 유지하면서 쓰레싱을 막는 방법입니다.
 
-참조 지역성의 원리(Locality of reference)는 프로세스가 특정 시간 동안 일정 장소를 집중적으로 참조하는 성질을 말합니다. 이 원리에 기반하여 프로세스가 일정 시간 동안 원활히 수행되기 위해 한꺼번에 메모리에 올라와 있어야 하는 페이지들의 집합을 Working set이라고 합니다.
+> 참조 지역성의 원리(Locality of reference) : 프로세스가 특정 시간 동안 일정 장소를 집중적으로 참조하는 성질
+
+작업 집합 모델은 참조 지역성의 원리를 바탕으로 하며, 가장 최근에 접근한 프레임이 이후에도 또 참조될 가능성이 높다는 가정에서 출발합니다.
+
+최근 일정 시간 동안 참조한 페이지들을 집합(Working set)으로 만들고, 이 집합에 있는 페이지들을 물리 메모리에 유지하여 프로세스의 실행을 돕습니다.
 
 운영체제가 지속적으로 각 프로세스의 Working set을 지켜보면서 충분한 프레임을 할당해 주며 멀티프로그래밍 정도를 조절하는 방법입니다.
 
@@ -82,6 +98,8 @@ PFF는 Page Fault의 상한 값과 하한 값을 두고, Page Fault가 상한 �
 ## 레퍼런스
 
 - [[운영체제(OS)] 9. 가상 메모리(Virtual Memory)](https://rebro.kr/179)
+- [[운영체제] Page Fault, Thrashing](https://yamyam-spaghetti.tistory.com/116)
+- [[운영체제] 페이징 교체 알고리즘](https://steady-coding.tistory.com/526)
 
 ---
 
