@@ -1,6 +1,6 @@
 ---
 emoji: 🖥️
-title: 🖥️ [운영체제] 페이지 교체 알고리즘 (FIFO, OPT, LRU, LFU)
+title: 🖥️ [운영체제] 페이지 교체 알고리즘 (OPT, FIFO, LRU, LFU)
 date: '2023-12-06 18:00:00'
 author: 추교현
 tags:
