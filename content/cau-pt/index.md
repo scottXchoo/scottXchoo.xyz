@@ -16,6 +16,7 @@ categories: 🗂️RECORD
 ### 이미지 및 자연어 처리를 위한 딥러닝
 
 - [프로젝트 제안 : R=VD 트랜스포머 기반의 실시간 폭력 사태 감지 시스템](https://www.miricanvas.com/v/12gd8tf)
+- [프로젝트 최종 발표](https://www.miricanvas.com/v/12q02jm)
 
 ### 캡스톤디자인(2)
 
