@@ -25,86 +25,49 @@ VDVT 모델은 Vision Transformer(ViT)를 사용하여 높은 정확도로 폭�
 
 교통 관리 및 위반 또는 무기 감지와 같이 다양한 목적으로 CCTV가 설치되고 있습니다. 그리고 CCTV를 통해 폭력 사태를 빠르게 감지하여 효과적으로 대응하는 것은 도심 속 시민들을 위해 매우 중요한 일입니다.
 
-CCTV의 수가 증가함에 따라 이를 모니터링하는 인력의 수도
-증가해야 되지만, 현재 이에 맞춰서 인력을 충분히 확보하는
-것은 현실적으로 어렵습니다. 그리고 CCTV를 모니터링하는
-사람의 집중력은 대략 20분 정도 지나게 되었을 때, 현저히
-떨어지기 때문에 사람이 CCTV를 지속적으로 모니터링하는
-것은 매우 어렵습니다.
+CCTV의 수가 증가함에 따라 이를 모니터링하는 인력의 수도증가해야 되지만, 현재 이에 맞춰서 인력을 충분히 확보하는
+것은 현실적으로 어렵습니다. 그리고 CCTV를 모니터링하는 사람의 집중력은 대략 20분 정도 지나게 되었을 때, 현저히 떨어지기 때문에 사람이 CCTV를 지속적으로 모니터링하는 것은 매우 어렵습니다.
 
 ## B. 기존 솔루션 (Existing Solution)
 
-최근 몇 년 동안 딥러닝 모델 덕분에 실제로 CCTV를 통해 폭
-력 사태 등을 감지하는 기술이 향상되었지만, CNN을 이용한
-기존의 딥러닝 모델들은 평균 정확도가 90% 미만이며, 높은
-컴퓨팅 리소스와 긴 학습 기간이 필요하기 때문에 실제 서비
-스로 쓰이기에는 아직 한계점이 많습니다.
+최근 몇 년 동안 딥러닝 모델 덕분에 실제로 CCTV를 통해 폭력 사태 등을 감지하는 기술이 향상되었지만, CNN을 이용한 기존의 딥러닝 모델들은 평균 정확도가 90% 미만이며, 높은 컴퓨팅 리소스와 긴 학습 기간이 필요하기 때문에 실제 서비스로 쓰이기에는 아직 한계점이 많습니다.
 
 ## C. 솔루션 제안 (Our Solution)
 
-이 연구에서 CCTV를 통한 폭력 사태 감지를 위한 새로운 딥
-러닝 기반 모델인 “VDVT: Violence Detection using Vision
-Transformer”를 제안합니다.
+이 연구에서 CCTV를 통한 폭력 사태 감지를 위한 새로운 딥러닝 기반 모델인 “VDVT: Violence Detection using Vision Transformer”를 제안합니다.
 
-Vision Transformer(ViT)를 사용하면, 높은 정확도로 폭력
-사태를 신속하게 감지한다는 장점이 있습니다. ViT는 기존
-CNN보다 높은 성능을 제공하지만, 데이터의 양이 충분하지
-않다면 정확도가 급격히 떨어진다는 단점이 있습니다. 저희는
-이를 보완하기 위해, 아키텍처 초반부에 사전 학습된 CNN 모
-델인 MobileNetV3를 넣어 추출된 특징 맵을 ViT의 입력값으
-로 사용하는 아키텍처를 구현했습니다.
+Vision Transformer(ViT)를 사용하면, 높은 정확도로 폭력 사태를 신속하게 감지한다는 장점이 있습니다. ViT는 기존
+CNN보다 높은 성능을 제공하지만, 데이터의 양이 충분하지 않다면 정확도가 급격히 떨어진다는 단점이 있습니다. 저희는
+이를 보완하기 위해, 아키텍처 초반부에 사전 학습된 CNN 모델인 MobileNetV3를 넣어 추출된 특징 맵을 ViT의 입력값으로 사용하는 아키텍처를 구현했습니다.
 
-이 모델을 통해 효율적인 모니터링과 빠른 대응이 가능해지
-며, 정확도와 신뢰성이 향상됩니다. 또한, 작은 데이터 셋으로
-빠른 학습이 가능해져 시스템의 비용 효율성이 높아집니다.
-이 연구는 CCTV를 통한 폭력 사태 감지의 효율성과 정확성을
-높이는 데 기여할 것으로 기대됩니다.
+이 모델을 통해 효율적인 모니터링과 빠른 대응이 가능해지며, 정확도와 신뢰성이 향상됩니다. 또한, 작은 데이터 셋으로 빠른 학습이 가능해져 시스템의 비용 효율성이 높아집니다. 이 연구는 CCTV를 통한 폭력 사태 감지의 효율성과 정확성을 높이는 데 기여할 것으로 기대됩니다.
 
 # II. 연구 목적 (RESEARCH PURPOSE)
 
-본 연구를 들어가기 앞서 저희는 선행 연구 논문들인 “A
-Novel ConvMixer Transformer Based Architecture for
-Violent Behavior Detection”, “Video Vision Transformer
-for Violence Detection” 등을 리뷰했습니다. 이를 통해 ViT
-는 기존 CNN 아키텍처보다 높은 성능을 제공하지만, Transformer 구조 자체가 CNN에 비해 Inductive Bias가 부족하다는 한계가 있어 많은 양의 데이터가 없으면 일반화가 제대로 이뤄지지 않는다는 것을 알게 되었습니다.
+본 연구를 들어가기 앞서 저희는 선행 연구 논문들인 “A Novel ConvMixer Transformer Based Architecture for Violent Behavior Detection”, “Video Vision Transformer for Violence Detection” 등을 리뷰했습니다. 이를 통해 ViT는 기존 CNN 아키텍처보다 높은 성능을 제공하지만, Transformer 구조 자체가 CNN에 비해 Inductive Bias가 부족하다는 한계가 있어 많은 양의 데이터가 없으면 일반화가 제대로 이뤄지지 않는다는 것을 알게 되었습니다.
 
-이러한 단점을 보완하기 위해 저희는 VGG-16 모델보다 32배
-더 가볍고 27배나 연산량이 적지만 성능은 0.9% 정도만 낮은
-MobileNetV3 모델을 아키텍처 초반부에 사용하여 이 모델의
-출력값으로 나온 특징 맵을 ViT의 인풋 시퀀스로 사용했습니
+이러한 단점을 보완하기 위해 저희는 VGG-16 모델보다 32배 더 가볍고 27배나 연산량이 적지만 성능은 0.9% 정도만 낮은 MobileNetV3 모델을 아키텍처 초반부에 사용하여 이 모델의 출력값으로 나온 특징 맵을 ViT의 인풋 시퀀스로 사용했습니
 다.
 
-저희가 제안한 모델을 통해 다음과 같은 기대 효과를 가져갈
-수 있습니다.
+저희가 제안한 모델을 통해 다음과 같은 기대 효과를 가져갈 수 있습니다.
 
 ### [1] 효율적인 모니터링과 신속한 대응
 
-CCTV 영상을 분석하여 폭력 사태를 높은 정확도로 신속히 감
-지할 수 있게 됩니다. 이는 사람의 직접적인 모니터링에 대한
-부담을 대폭 줄이고 사건 발생 시 즉각적인 알림을 통해 신속
-한 대응이 가능하게 됩니다. 결과적으로 도심 속 안전과 질서
-유지에 크게 기여할 것입니다.
+CCTV 영상을 분석하여 폭력 사태를 높은 정확도로 신속히 감지할 수 있게 됩니다. 이는 사람의 직접적인 모니터링에 대한 부담을 대폭 줄이고 사건 발생 시 즉각적인 알림을 통해 신속한 대응이 가능하게 됩니다. 결과적으로 도심 속 안전과 질서 유지에 크게 기여할 것입니다.
 
 ### [2] 정확도와 신뢰성 향상
 
-사전 학습된 MobileNetV3를 활용함으로써 기존 모델들과 비
-교했을 때, 더 높은 정확도와 신뢰도를 제공합니다. 이는 오류
-탐지를 줄여 실제 폭력 사태를 더 정확하게 감지하는 데 도움
-이 됩니다.
+사전 학습된 MobileNetV3를 활용함으로써 기존 모델들과 비교했을 때, 더 높은 정확도와 신뢰도를 제공합니다. 이는 오류 탐지를 줄여 실제 폭력 사태를 더 정확하게 감지하는 데 도움이 됩니다.
 
 ### [3] 적은 데이터 셋으로 빠른 학습
 
-사전 학습된 MobileNetV3의 사용으로 모델 학습 시간을 단
-축시키고, 필요한 컴퓨팅 리소스를 줄일 수 있게 됩니다. 이는
-시스템의 비용 효율성을 높여 더 넓은 범위에서 해당 모델을
-활용할 수 있게 됩니다.
+사전 학습된 MobileNetV3의 사용으로 모델 학습 시간을 단축시키고, 필요한 컴퓨팅 리소스를 줄일 수 있게 됩니다. 이는 시스템의 비용 효율성을 높여 더 넓은 범위에서 해당 모델을 활용할 수 있게 됩니다.
 
 # III. 선행 연구 (PRIOR RESEARCH)
 
 ## A. 논문 리뷰 : “Video Vision Transformers for Violence Detection”
 
-“Video Vision Transformers for Violence Detection”
-논문에서는 Pre-processing을 통해 프레임 변환과 크기 조정을 하고 비디오를 여러 프레임으로 변환시킨 다음 Video Frames Augmentation에 대입시킨 후, ViViT(비디오 비전 트랜스포머) 프레임워크를 사용하여 비디오의 폭력과 비폭력 여부를 분류합니다.
+“Video Vision Transformers for Violence Detection” 논문에서는 Pre-processing을 통해 프레임 변환과 크기 조정을 하고 비디오를 여러 프레임으로 변환시킨 다음 Video Frames Augmentation에 대입시킨 후, ViViT(비디오 비전 트랜스포머) 프레임워크를 사용하여 비디오의 폭력과 비폭력 여부를 분류합니다.
 
 ![pr-vdvt-1.png](pr-vdvt-1.png)
 
@@ -124,7 +87,7 @@ ViViT를 활용하는 방법과 이를 활용해서 얻은 성능을 다른 모�
 
 ## C. 논문 리뷰 : “CrimeNet: Neural Structured Learning using Vision Transformer for violence detection”
 
-“CrimeNet: Neural Structured Learning using Vision Transformer for violence detection” 논문에서는 CrimeNet이라는 ViT와 adversarial NSL을 결합시킨 모델을 제안합니다.
+“CrimeNet: Neural Structured Learning using Vision Transformer for violence detection" 논문에서는 CrimeNet이라는 ViT와 adversarial NSL을 결합시킨 모델을 제안합니다.
 
 ![pr-vdvt-3.png](pr-vdvt-3.png)
 
@@ -138,7 +101,7 @@ ViViT를 활용하는 방법과 이를 활용해서 얻은 성능을 다른 모�
 
 > Figure 4: Baseline Model Architecture
 
-## A. 베이스라인 모델 아키텍처 (Basline Model Architecture)
+## A. 베이스라인 모델 아키텍처 (Baseline Model Architecture)
 
 ### [1] Video Input
 
@@ -158,21 +121,16 @@ ViViT를 활용하는 방법과 이를 활용해서 얻은 성능을 다른 모�
 
 멀티 헤드 어텐션 (Multi-Head Attention) : 어텐션을 여러 번 병렬로 수행하여 모델의 강건성 증가
 
-스킵 연결 (Skip connection) : 여러 레이어를 건너뛰고 출
-력에 직접 추가하여 그래디언트 소실 문제 방지
+스킵 연결 (Skip connection) : 여러 레이어를 건너뛰고 출력에 직접 추가하여 그래디언트 소실 문제 방지
 
-계층 정규화 (Layer Normalization) : 각 데이터에 대해 정
-규화하여 안정적인 학습 진행에 도움
+계층 정규화 (Layer Normalization) : 각 데이터에 대해 정규화하여 안정적인 학습 진행에 도움
 
 완전 연결 레이어 (Dense Layer) \* 2개
 
-- 첫 번째 Dense Layer : 입력 데이터의 차원을 확장하는
-  역할
-- 두 번째 Dense Layer : 확장된 차원을 다시 축소하는
-  역할
+- 첫 번째 Dense Layer : 입력 데이터의 차원을 확장하는 역할
+- 두 번째 Dense Layer : 확장된 차원을 다시 축소하는 역할
 
-스킵 연결 (Skip connection) : 여러 레이어를 건너뛰고 출
-력에 직접 추가하여 그래디언트 소실 문제 방지
+스킵 연결 (Skip connection) : 여러 레이어를 건너뛰고 출력에 직접 추가하여 그래디언트 소실 문제 방지
 
 트랜스포머 블록은 이런 식으로 구성되어 있습니다.
 
@@ -338,7 +296,7 @@ ResNet은 잔차 학습(Residual Learning)을 기반으로 한 딥러닝 모델�
 
 **실험 결과 분석:**
 
-Skip Connection 수가 2개에서 3개로 많아지니까 오히려 성능이 낮아지는 것을 알 수 있었습니다. 그 이유는 1) 모델의 복잡성이 증가하여 과대 적합(Overfitting)이 발생했고 2) 필요하지 않은 정보가 계속해서 전달되는 문제가 발생했기 때문입니다.
+Skip Connection 수가 2개에서 3개로 많아지니까 오히려 성능이 낮아지는 것을 알 수 있었습니다. 그 이유는 1) 모델의 복잡성이 증가하여 과대 적합(Overfitting)이 발생했고, 2) 필요하지 않은 정보가 계속해서 전달되는 문제가 발생했기 때문입니다.
 
 또한, 풀링의 타입은 평균(Average)보다 최대(Max)가 성능이 더 좋았습니다. 그 이유는 폭력/비폭력 비디오를 판단하는 모델이 비디오에서 특정 순간의 강한 움직임이나 두드러진 특징을 감지하는 데 유리하기 때문입니다.
 
