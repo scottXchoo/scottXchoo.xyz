@@ -45,21 +45,21 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '22.06 - 23.05',
-        activity: '🏛️ 블록체인 학회 CURG 학회장',
-        links: {
-          post: '',
-          github: '',
-          demo: 'http://curg.xyz/',
-        },
-      },
-      {
         date: '22.05 - 23.07',
         activity: '⛓️ 블록체인 스타트업 A41 풀타임 근무',
         links: {
           post: '',
           github: '',
           demo: 'https://www.a41.io/ko',
+        },
+      },
+      {
+        date: '22.06 - 23.05',
+        activity: '🏛️ 블록체인 학회 CURG 학회장',
+        links: {
+          post: '',
+          github: '',
+          demo: 'http://curg.xyz/',
         },
       },
       {
@@ -73,7 +73,7 @@ module.exports = {
       },
       {
         date: '21.09 - 22.03',
-        activity: '🏠 대학생 단기임대 플랫폼 "대단" 창업 도전',
+        activity: '🏠 대학생 단기임대 플랫폼 창업 도전',
         links: {
           post: '',
           github: '',
@@ -110,6 +110,7 @@ module.exports = {
       },
       // ========================================================
       // ========================================================
+
       {
         title: 'Supernova',
         description: 'Cosmos 블록체인의 리퀴드 스테이킹 프로토콜 DeFi 플랫폼',
@@ -121,6 +122,18 @@ module.exports = {
           demo: '',
         },
       },
+      {
+        title: 'Project Gateway',
+        description: 'Archway 플랫폼에서 Web2.0과 Web3.0을 연결하는 솔루션',
+        techStack: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+        thumbnailUrl: 'gateway.png',
+        links: {
+          post: '',
+          github: 'https://github.com/D3LAB-DAO/gateway-frontend',
+          demo: 'https://gateway-frontend.vercel.app',
+        },
+      },
+
       {
         title: 'COSMonaut',
         description:
