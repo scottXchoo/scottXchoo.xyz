@@ -1,6 +1,6 @@
 ---
 emoji: 🙇🏻‍♂️
-title: 🙇🏻‍♂️ Bye 2021 & Hello 2022
+title: 🙇🏻‍♂️ BYE 2021 & HELLO 2022
 date: '2022-01-01 09:00:00'
 author: 추교현
 tags: Essay
@@ -11,7 +11,7 @@ categories: 🙇🏻‍♂️ESSAY
 
 ---
 
-# Bye 2021
+# BYE 2021
 
 ## 🪖 드디어 전역!
 
@@ -75,7 +75,7 @@ B+People 팀원분들과 열심히 참여해서 좋은 결과를 내보도록 �
 
 ---
 
-# Hello 2022
+# HELLO 2022
 
 ## ⭐️ 22년 핵심가치
 
