@@ -15,7 +15,7 @@ categories: 🗂️RECORD
 
 ### ACT
 
-- [미니 연극 : 도레미파솔라시도](https://www.miricanvas.com/v/12rr7se)
+- [미니 연극 : 도시라솔파미레도](https://www.miricanvas.com/v/12rr7se)
 
 ## 4학년 1학기 | 23년 하반기
 
