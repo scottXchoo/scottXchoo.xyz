@@ -11,6 +11,12 @@ categories: 🗂️RECORD
 
 ---
 
+## 24년 겨울 계절학기
+
+### ACT
+
+- [미니 연극 : 도레미파솔라시도](https://www.miricanvas.com/v/12rr7se)
+
 ## 4학년 1학기 | 23년 하반기
 
 ### 이미지 및 자연어 처리를 위한 딥러닝
